@@ -6,7 +6,7 @@ import Animated, {
   withRepeat,
   withSpring,
 } from 'react-native-reanimated';
-import {SIZE} from '../../App';
+import {SIZE} from '../../App'
 
 export const BasicAnimations = () => {
 
