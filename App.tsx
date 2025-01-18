@@ -10,7 +10,7 @@ import {
   View,
 } from 'react-native';
 import { BasicAnimations } from './src/Animations/BasicAnimation';
-
+import { PanGestureComponent } from './src/Animations/PanGestureHandler';
 
 export const SIZE = 100
 
@@ -27,7 +27,8 @@ function App(): React.JSX.Element {
       backgroundColor: 'red',
     }}
     >
-      <BasicAnimations />
+      {/* <BasicAnimations /> */}
+      <PanGestureComponent />
     </View>
   );
 }
