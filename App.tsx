@@ -14,6 +14,7 @@ import { BasicAnimations } from './src/Animations/BasicAnimation';
 import { PanGestureComponent } from './src/Animations/PanGestureHandler';
 import { PinchGestureHandler } from './src/Animations/PinchGestureHandler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
+import { TapGestureHandler } from './src/Animations/TapGestureHandler';
 
 export const SIZE = 100
 
@@ -32,7 +33,8 @@ function App(): React.JSX.Element {
     >
       {/* <BasicAnimations /> */}
       {/* <PanGestureComponent /> */}
-      <PinchGestureHandler />
+      {/* <PinchGestureHandler /> */}
+      <TapGestureHandler />
     </GestureHandlerRootView>
   );
 }
