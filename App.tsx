@@ -15,6 +15,8 @@ import { PanGestureComponent } from './src/Animations/PanGestureHandler';
 import { PinchGestureHandler } from './src/Animations/PinchGestureHandler';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { TapGestureHandler } from './src/Animations/TapGestureHandler';
+import { LongPressGestureHandler } from './src/Animations/LongPressGestureHandler';
+import { ScrollViewInterpolate } from './src/Animations/Components/ScrollViewInterpolate';
 
 export const SIZE = 100
 
@@ -34,7 +36,9 @@ function App(): React.JSX.Element {
       {/* <BasicAnimations /> */}
       {/* <PanGestureComponent /> */}
       {/* <PinchGestureHandler /> */}
-      <TapGestureHandler />
+      {/* <TapGestureHandler /> */}
+      {/* <LongPressGestureHandler /> */}
+      <ScrollViewInterpolate />
     </GestureHandlerRootView>
   );
 }
