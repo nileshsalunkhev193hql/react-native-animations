@@ -5,12 +5,15 @@
  * @format
  */
 
-import React, { useEffect, useRef } from 'react';
+import 'react-native-gesture-handler'
+import React from 'react';
 import {
   View,
 } from 'react-native';
 import { BasicAnimations } from './src/Animations/BasicAnimation';
 import { PanGestureComponent } from './src/Animations/PanGestureHandler';
+import { PinchGestureHandler } from './src/Animations/PinchGestureHandler';
+import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 export const SIZE = 100
 
@@ -18,7 +21,7 @@ function App(): React.JSX.Element {
 
 
     return (
-    <View
+    <GestureHandlerRootView
     style={{
       display: 'flex',
       flex: 1,
@@ -28,8 +31,9 @@ function App(): React.JSX.Element {
     }}
     >
       {/* <BasicAnimations /> */}
-      <PanGestureComponent />
-    </View>
+      {/* <PanGestureComponent /> */}
+      <PinchGestureHandler />
+    </GestureHandlerRootView>
   );
 }
 export default App;

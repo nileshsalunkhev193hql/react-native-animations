@@ -1,10 +1,15 @@
 import React from 'react'
 import { View } from 'react-native'
-import { PanGestureHandler, GestureDetector, Gesture, GestureHandlerRootView } from 'react-native-gesture-handler'
+import { GestureDetector, Gesture } from 'react-native-gesture-handler'
 import Animated, { useAnimatedStyle, useSharedValue, withSpring } from 'react-native-reanimated'
 import { SIZE } from '../../App'
 
 export const PanGestureComponent = () => {
+
+    /*
+    Pangesture is basically a type of gesture which deals with continuous tracking of user moment.
+    Eg. Dragging of some object like we have done below.
+    */
 
     const translateX = useSharedValue(0)
     const translateY = useSharedValue(0)
@@ -40,10 +45,8 @@ export const PanGestureComponent = () => {
         startValue.value.y = withSpring(0)
     })
 
-    // const gestures = Gesture.
-
     return (
-        <GestureHandlerRootView
+        <View
         style={{
             display:'flex',
             justifyContent:'center',
@@ -74,6 +77,6 @@ export const PanGestureComponent = () => {
             />
             </GestureDetector>
             </View>
-        </GestureHandlerRootView>
+        </View>
     )
 }
